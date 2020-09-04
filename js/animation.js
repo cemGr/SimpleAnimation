@@ -25,12 +25,27 @@ function myMove() {
         }else{hour+=1;}
       }else{min+=1;}
     }else {
+      setTime(){
+        var time= new data;
+        min=time.getMinute();
+        hour=time.getHour();
+        sec=time.getSeconds();
+        let a =min*6;
+        let b =firstline+a+lastline;
+        elem.style.transform=b;
+        let a =hour*30;
+        let b =firstline+a+lastline;
+        elem.style.transform=b;
+
+
+      }
       var date= new Date();
-      var d = date.getSeconds();
+      var sec = date.getSeconds();
+
       pos++;
       rotate=firstline+pos+lastline;
       elem.style.transform= rotate;
-      console.log(d);
+      console.log(sec);
       delete date;
       //elem2.style.top = pos2 + "px";
       //elem2.style.left= pos2 + "px";
