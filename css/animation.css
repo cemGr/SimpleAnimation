@@ -1,0 +1,27 @@
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background-image: url("../images/clock.png");
+  background-repeat: round;
+  border-radius: 100%;
+
+}
+#animate {
+  width: 20px;
+  height: 150px;
+  left:190px;
+  top: 60px;
+  transform: rotate(20deg);
+  position: absolute;
+  background: red;
+}
+
+#crash{
+  width: 50px;
+  height: 50px;
+  top: 350px;
+  left: 350px;
+  position: absolute;
+  background: blue;
+}
